@@ -1,15 +1,15 @@
 package com.example.quizapp;
 
-public class ModelCategory {
+public class CategoryModel {
     private String categoryId, categoryName, categoryImage;
 
-    public ModelCategory(String categoryId, String categoryName, String categoryImage) {
+    public CategoryModel(String categoryId, String categoryName, String categoryImage) {
         this.categoryId = categoryId;
         this.categoryName = categoryName;
         this.categoryImage = categoryImage;
     }
 
-    public ModelCategory() {}
+    public CategoryModel() {}
 
     public String getCategoryId() {
         return categoryId;

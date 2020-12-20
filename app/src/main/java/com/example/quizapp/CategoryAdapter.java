@@ -1,8 +1,6 @@
 package com.example.quizapp;
 
 import android.content.Context;
-import android.content.Intent;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,18 +8,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.helper.widget.Layer;
 import androidx.recyclerview.widget.RecyclerView;
 
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder> {
 
     Context context;
-    ArrayList<ModelCategory> categoryModels;
+    ArrayList<CategoryModel> categoryModels;
 
-    public CategoryAdapter(Context context, ArrayList<ModelCategory> categoryModels) {
+    public CategoryAdapter(Context context, ArrayList<CategoryModel> categoryModels) {
         this.context = context;
         this.categoryModels = categoryModels;
     }
@@ -36,14 +35,17 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
     @Override
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
-        final ModelCategory model = categoryModels.get(position);
+        final CategoryModel model = categoryModels.get(position);
 
         holder.textView.setText(model.getCategoryName());
-
+        Glide.with(context)
+                .load(model.getCategoryImage())
+                .into(holder.imageView);
     }
 
     @Override
     public int getItemCount() {
+
         return categoryModels.size();
     }
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img5"
+    android:background="@drawable/quizbackground"
     tools:context=".signup">
 
     <TextView
@@ -17,7 +17,7 @@
         android:duplicateParentState="true"
         android:text="Hello !"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/blue"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="serif"
@@ -34,7 +34,7 @@
         android:duplicateParentState="true"
         android:text="Signup to"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/blue"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="serif"
@@ -51,7 +51,7 @@
         android:duplicateParentState="true"
         android:text="get started"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/blue"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="serif"
@@ -119,7 +119,7 @@
         android:background="@drawable/button"
         android:text="SignUp"
         android:textSize="18sp"
-        app:backgroundTint="@color/blue"
+        app:backgroundTint="@color/lightblue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
@@ -135,7 +135,7 @@
         android:paddingLeft="0dp"
         android:text="Already Have an Account ? Sign in "
         android:textAllCaps="false"
-        android:textColor="#302525"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signup" />
 

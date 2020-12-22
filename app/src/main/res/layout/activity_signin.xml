@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/quizbackground"
-    tools:context=".signin">
+    tools:context=".Signin">
 
 
     <TextView
@@ -72,6 +72,7 @@
         android:inputType="textEmailAddress"
         android:padding="20dp"
         android:textColorHint="#555353"
+        android:textCursorDrawable="@drawable/cursor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,13 +91,14 @@
         android:inputType="textPassword"
         android:padding="20dp"
         android:textColorHint="#555353"
+        android:textCursorDrawable="@drawable/cursor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
-        android:id="@+id/signup"
+        android:id="@+id/signIn"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_marginTop="36dp"
@@ -109,7 +111,7 @@
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/ForgotPass"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -121,10 +123,10 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup" />
+        app:layout_constraintTop_toBottomOf="@+id/signIn" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/signUp"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -136,6 +138,6 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup" />
+        app:layout_constraintTop_toBottomOf="@+id/signIn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
